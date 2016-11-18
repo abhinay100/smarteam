@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "190479323920",
+    "project_id": "smarteam-32565"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:190479323920:android:292a889a22bd37eb",
+        "android_client_info": {
+          "package_name": "com.ellipsonic.smartteam"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "190479323920-e4mgphf8fl0ietiq03cuv5e2ia6bur1j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ellipsonic.smartteam",
+            "certificate_hash": "BF2FD050FB8BDA3C1A284A569C1990781EB7B16A"
+          }
+        },
+        {
+          "client_id": "190479323920-ipfkdpkjm3kjf1b73v2hp6pu1ghu49l0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCAJ-eVVkabV_BAMHk9h4sH_qKZ-7QEhsE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,44 @@
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/profile_card"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    card_view:cardUseCompatPadding="true"
+    card_view:cardCornerRadius="4dp"
+    card_view:cardElevation="4dp">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+        <ImageView
+            android:id="@+id/profile_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:contentDescription="hello_world"
+            android:layout_alignParentTop="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/scarlett"
+            android:layout_centerHorizontal="true"/>
+        <TextView
+            android:id="@+id/music_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profile_pic"
+            android:layout_alignLeft="@+id/profile_pic"
+            android:text="Lorim ipsum"
+            android:inputType="text"
+            android:textColor="#000"
+            android:layout_marginTop="4dp"
+            android:textSize="12sp"/>
+        <TextView
+            android:id="@+id/music_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/music_name"
+            android:layout_alignLeft="@+id/music_name"
+            android:text="Loriem ipsum dolor sit amet consectetuadscing eit, sed \n eiusmod tem incidunt ut ..."
+            android:textSize="12sp"
+            android:layout_marginTop="4dp"/>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

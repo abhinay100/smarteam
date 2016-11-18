@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.ellipsonic.smartteam.Activity.EditProfile">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include
+            layout="@layout/toolbar_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorPrimary"
+        android:id="@+id/header_layout">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/cance_btn"
+            android:id="@+id/cancel_btn"
+            android:layout_gravity="left"
+            android:layout_weight="1"
+            android:layout_alignTop="@+id/save_btn"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:layout_marginLeft="25dp"
+            android:background="@android:color/transparent" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/save_btn"
+            android:id="@+id/save_btn"
+            android:layout_weight="2"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:layout_marginRight="25dp"
+            android:background="@android:color/transparent" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header_layout"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:id="@+id/profile_pic"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/scarlett"
+            android:scaleType="fitXY" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/profile_pic"
+            android:layout_marginTop="10dp"
+            android:id="@+id/uploading_img">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:id="@+id/upload_pic"
+                android:src="@drawable/remove_photo"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/uploadphoto"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+        </RelativeLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/uploading_img"
+            android:id="@+id/fname_layout"
+            android:layout_marginTop="25dp">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/first_name"
+                android:nextFocusForward="@+id/last_name"
+                android:id="@+id/first_name" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fname_layout"
+            android:id="@+id/lname_layout"
+            android:imeOptions="actionNext"
+            android:layout_marginTop="25dp">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/last_name"
+                android:nextFocusForward="@+id/current_job"
+                android:id="@+id/last_name" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lname_layout"
+            android:id="@+id/curJob_layout"
+            android:layout_marginTop="25dp">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/current_job"
+                android:lines="5"
+                android:gravity="top|left"
+                android:singleLine="false"
+                android:imeOptions="actionNext"
+                android:id="@+id/current_job" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/curJob_layout"
+            android:id="@+id/preJob_layout"
+            android:layout_marginTop="25dp">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lines="5"
+                android:gravity="top|left"
+                android:singleLine="false"
+                android:imeOptions="actionNext"
+                android:hint="@string/previous_job"
+                android:id="@+id/previous_job" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/preJob_layout"
+            android:id="@+id/education_layout"
+            android:layout_marginTop="25dp">
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top|left"
+                android:singleLine="false"
+                android:imeOptions="actionNext"
+                android:hint="@string/education_details"
+                android:layout_below="@+id/pre_job"
+                android:id="@+id/education"
+                android:lines="5" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/education_layout"
+            android:id="@+id/summary_layout"
+            android:layout_marginTop="25dp">
+            <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top|left"
+            android:singleLine="false"
+            android:imeOptions="actionNext"
+            android:hint="@string/summary_details"
+            android:id="@+id/summary"
+            android:lines="5" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/summary_layout"
+            android:id="@+id/experience_layout"
+            android:layout_marginTop="25dp">
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top|left"
+                android:singleLine="false"
+                android:imeOptions="actionNext"
+                android:hint="@string/experience_details"
+                android:layout_below="@+id/summary"
+                android:id="@+id/experience"
+                android:lines="5" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/experience_layout"
+            android:id="@+id/volunteer_experience_layout"
+            android:layout_marginTop="25dp">
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/volunteer_experience_details"
+            android:gravity="top|left"
+            android:singleLine="false"
+            android:imeOptions="actionNext"
+            android:id="@+id/volunteer_experience"
+            android:lines="5" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/volunteer_experience_layout"
+            android:id="@+id/projects_layout"
+            android:layout_marginTop="25dp">
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top|left"
+                android:singleLine="false"
+                android:imeOptions="actionNext"
+                android:hint="@string/projects_details"
+                android:id="@+id/projects"
+                android:lines="5" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/projects_layout"
+            android:id="@+id/language_layout"
+            android:layout_marginTop="25dp">
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top|left"
+                android:singleLine="false"
+                android:imeOptions="actionNext"
+                android:hint="@string/language_info"
+                android:id="@+id/language"
+                android:lines="5" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/language_layout"
+            android:id="@+id/personal_layout"
+            android:layout_marginTop="25dp">
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top|left"
+                android:singleLine="false"
+                android:hint="@string/personal_details_info"
+                android:id="@+id/personal_details"
+                android:imeOptions="actionSend"
+                android:lines="5" />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_below="@+id/personal_layout"
+            android:layout_marginTop="20dp"
+            android:id="@+id/save_profile"
+            android:background="@color/colorPrimary"
+            android:text="@string/Save_Profile_btn"
+            android:textSize="15dp"
+            android:textColor="@android:color/white"/>
+    </RelativeLayout>
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
+

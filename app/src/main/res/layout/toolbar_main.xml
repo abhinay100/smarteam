@@ -1,0 +1,25 @@
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="?attr/actionBarSize"
+    android:gravity="top|start"
+    android:background="?attr/colorPrimary">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="?attr/actionBarSize"
+        android:src="@mipmap/ic_launcher"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginLeft="100dp"
+        android:id="@+id/toolbar_text"
+        android:text="@string/app_name"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:includeFontPadding="false"
+        android:textSize="20dp"/>
+
+ </android.support.v7.widget.Toolbar>

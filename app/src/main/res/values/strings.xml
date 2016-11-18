@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">SmartTeam</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="hint_id">ID</string>
+    <string name="hint_password">PASSWORD</string>
+    <string name="login_btn">LOG IN</string>
+    <string name="first_name">First name</string>
+    <string name="last_name">Last name</string>
+    <string name="current_job">Current company and Position</string>
+    <string name="previous_job">Previous company</string>
+    <string name="education_details">Enter Education Details</string>
+    <string name="summary_details">Enter Summary here</string>
+    <string name="experience_details">Enter Your Experience here</string>
+    <string name="volunteer_experience_details">Enter Your Volunteer details</string>
+    <string name="projects_details">Enter your Projects info.</string>
+    <string name="language_info">Enter your languages knowledge</string>
+    <string name="personal_details_info">Enter your personal details </string>
+    <string name="Save_Profile_btn">Save Profile</string>
+
+    <string name="summery_card">Summary</string>
+    <string name="experience_card">Experience</string>
+    <string name="volunteer_card">Volunteer Experience</string>
+    <string name="project_card">Projects</string>
+    <string name="language_card">Language</string>
+    <string name="education_card">Education</string>
+    <string name="personal_card">Personal Details</string>
+
+
+    <string name="cance_btn">X Cancel</string>
+    <string name="camara_click">Clck Again</string>
+    <string name="save_btn">Save</string>
+    <string name="mark_attendence">Mark Attendence</string>
+    <string name="edit_profile">Edit Profile</string>
+
+    <string name="user_name">Name</string>
+    <string name="user_emp_id">Employee ID</string>s
+    <string name="user_date">Date and Time</string>
+    <string name="user_location">Location</string>
+    <string name="person_id">User Id</string>
+
+    <string name="loading">Loading..</string>
+    <string name="apply_leave">Apply Leave</string>
+    <string name="markAttendence">Mark Attendence</string>
+</resources>
